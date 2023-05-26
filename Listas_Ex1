@@ -1,0 +1,21 @@
+#TRABALHANDO COM LISTAS
+
+lista = [1, 2, 3, 4, 5]
+
+print(lista) # imprime a lista, ou vetor
+print(lista[0]) # imprime o primeiro item
+print(lista[4]) #imprime o último
+print(lista[-2]) # imprime o penúltimo (segundo de trás pra frente)
+del lista[1] # deleta o segundo item da lista
+print(lista) #imprime lista atualizada após delete do item 2
+
+print(len(lista)) # imprime o tamanho da lista len = length
+
+lista[3] = 8 # substitui o valor do 4 item para o valor = 8
+print(lista)
+
+lista.append(9) # adiciona elemento ao final da lista com ".append(value)"
+print(lista) # imprime lista com elemento adicionado
+
+lista.insert(0, 7) # adiciona o 7 na primeira posição ".insert(location, value)
+print(lista) # imprime a alteração
