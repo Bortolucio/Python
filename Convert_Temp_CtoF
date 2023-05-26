@@ -1,0 +1,11 @@
+PROGRAMA PARA CONVERTER TEMPERATURA ºC PARA ºF
+
+#F=1.8*C +32
+#C=(F-32)/1.8
+temp_C = float(input("Digite um valor em ºC: "))
+temp_F = float(input("Digite um valor em ºF: "))
+print(temp_C,"Celcius", " e ", temp_F, "Fahrenheit")
+conv_C_to_F = 1.8*temp_C + 32
+conv_F_to_C = (temp_F - 32)/1.8
+print(temp_C, " graus °C ",  round(conv_C_to_F,2), "Fahrenheit")
+print(temp_F, " graus °F ",  round(conv_F_to_C,2), "Celcius")
