@@ -1,0 +1,4 @@
+#DESENHANDO UM RET NGULO COM CARACTERES
+print("+" + 10*"-" + "+")
+print(("|" + " "*10 +"|\n")*5, end="")  #O comando (end=””) impede que o pule uma linha
+print("+" + 10*"-" +"+")
