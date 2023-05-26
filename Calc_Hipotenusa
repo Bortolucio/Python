@@ -1,0 +1,8 @@
+#PROGRAMA PARA CALCULAR A HIPOTENUSA DO TRIANGULO RETANGULO
+
+#Calculando Hipotenusa
+
+cat_op = float(input("Insira o comprimento do cateto oposto: "))
+cat_ad = float(input("Insira o comprimento do cateto adjacente: "))
+hypot = (cat_op**2 + cat_ad**2)**0.5
+print("O comprimento da hipotenusa é: ", hypot)
