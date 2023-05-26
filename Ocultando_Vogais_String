@@ -1,0 +1,20 @@
+#ocultando vogais em uma string
+
+user_word = input("Digite uma palavra: ")
+user_word = user_word.upper()
+#por ser case sensitive, usei o comando .upper() para a string ficar toda maiúscula
+
+#laço for com "continue" para remover a condição "if" char 
+for char in user_word:
+    if char == 'A':
+        continue
+    elif char == 'E':
+        continue
+    elif char == 'I':
+        continue
+    elif char == 'O':
+        continue
+    elif char == 'U':
+        continue
+    else:
+        print(char)
