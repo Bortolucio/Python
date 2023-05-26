@@ -1,0 +1,12 @@
+#Lendo dois números
+num_1 = int(input("Digite o primeiro número: "))
+num_2 = int(input("Digite o segundo número: "))
+            
+#Escolha o número maior
+if num_1 > num_2:
+    larger_num = num_1
+else:
+    larger_num = num_2
+
+#Imprimindo o resultado
+print("O maior número é: ", larger_num)
