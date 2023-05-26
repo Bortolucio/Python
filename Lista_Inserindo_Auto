@@ -1,0 +1,19 @@
+#TRABALHANDO COM LISTAS inserindo automático
+
+lista = [] #lista vazia
+
+for i in range(5):      	# inserir de 1 até 5 
+    lista.append(i + 1) 	# insere no final
+    print(lista)
+    
+while len(lista) > 1: 	# remove até restar um
+    del lista[-1]     	# o loop vai removendo até restar 1 elemento
+    print(lista)
+print("---")
+
+lista_2 = [] 	#outro exemplo
+
+for i in range(7):
+    lista_2.insert(0, i + 1)	#outra forma de inserir. Inserir no inicio com .insert(0,x)
+    print(lista_2)  #imprime cada loop
+print(lista_2)      #imprime somente o resultado
