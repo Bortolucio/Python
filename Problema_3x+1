@@ -1,0 +1,16 @@
+#problema do 3x + 1 se impar e se par, x/2 até chegar no número 1
+
+c0 = int(input("Digite o número:"))
+
+contador = 0 #contador de loop
+while c0 != 1:
+    
+    if c0 %2 == 0:
+        c0 = c0/2
+        print(c0)
+        contador += 1 #contador de loop
+    else:
+        c0 = 3*c0 + 1
+        print(c0)
+        contador += 1 #contador de loop
+print(contador, “etapas”) #exibe quantos loops fora executados
