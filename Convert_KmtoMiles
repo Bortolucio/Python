@@ -1,0 +1,14 @@
+#PROGRAMA PARA CONVERTER MILHAS PARA QUILÔMETROS
+
+# 1 Milha = 1.61 km
+#round() usado para arredondar
+#round(var, casas decimais)
+
+kilometers = float(input("digite o valor em Km: "))
+miles = float(input("digite um valor em milhas: "))
+
+miles_to_kilometers = miles * 1.61
+kilometers_to_miles = kilometers / 1.61
+
+print(miles, "milhas equivalem a", round(miles_to_kilometers, 2), "quilômetros")
+print(kilometers, "quilômetros equivale a", round(kilometers_to_miles, 2), "milhas")
