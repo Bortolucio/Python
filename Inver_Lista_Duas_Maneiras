@@ -1,0 +1,23 @@
+—------------------------------------------------------------------------------------------
+#INVERTENDO LISTA DE DUAS MANEIRAS
+
+lista = [1,2,3,4,5,6,7,8] #MANEIRA TRABALHOSA SEM LOOP
+
+lista[0],lista[7] = lista[7], lista[0]
+lista[1],lista[6] = lista[6], lista[1]
+lista[2],lista[5] = lista[5], lista[2]
+lista[3],lista[4] = lista[4], lista[3]
+
+print(lista)
+
+list = [8,7,6,5,4,3,2,1]  #MAIS FÁCIL COM LOOP
+length = len(list)  #ATRIBUI VARIÁVEL AO COMPRIMENTO DO VETOR
+
+#PEGA A METADE 11//2 = 10//2 == 5
+#SE FOR ÍMPAR, O ELEMENTO DO MEIO NÃO EXECUTA TROCA
+#PELA REGRA ACIMA, O PRIMEIRO TROCA COM O ÚLTIMO E O ÚLTIMO COM O PRIMEIRO
+#SEGUINDO A LÓGICA, LIST[i] i=0 E LIST(ULTIMO -i -1)=(ULTIMO - 0 - 1)
+
+for i in range(length//2):
+    list[i],list[length - i - 1] = list[length -i - 1],list[i]
+print(list)
