@@ -1,0 +1,10 @@
+#PALAVRA PASSE COM while E break
+
+mes_secreto = "julho"
+
+mes = str()
+while mes != mes_secreto:
+    mes = input("Adivinhe o mês do meu aniverário:")
+    if mes == mes_secreto:
+        break
+print("Você adivinhou o mês de ", mes_secreto)
