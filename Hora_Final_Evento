@@ -1,0 +1,17 @@
+#PROGRAMA PARA CALCULAR HORÁRIO FINAL DE EVENTO
+
+hora_inicial = int(input('Digite a hora inicial do evento: '))
+minuto_inicial = int(input('Digite o minuto inicial do evento: '))
+tempo_duracao = int(input('Digite a duração do evento em minutos: '))
+
+#(minutos_totais//60) para transformar minutos em hora. Ex:120 min = 2 horas
+# x//y = parte inteira da divisão de x por y. 
+# hora_final % 24 para se exceder 24 horas. Ex: 30 horas = 6 horas do outro dia
+#minuto_final % 60 para o que exceder 60 min. Ex: 80min = 20min 
+# no caso de 80min, a hora já é add pela “(minutos_totais//60) 
+
+minutos_totais = tempo_duracao + minuto_inicial 
+hora_final = (hora_inicial + (minutos_totais // 60)) % 24 
+minuto_final = minutos_totais % 60
+
+print('O horário final do evento é %d:%d.' %(hora_final, minuto_final))
