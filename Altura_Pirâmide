@@ -1,0 +1,30 @@
+#CALCULANDO ALTURA DA PIRAMIDE. A camada de baixo tem um bloco a mais que a 
+#de cima no topo tem um bloco, na camada de baixo, dois, no próximo 3 e assim por diante.
+#Para considerar a altura, terá que ter a base completa. A base é igual a altura.
+#Existem diversas formas de calcular a altura, pode-se usar referencia a progreção aritimética.
+#Pode-se usar também uma estrutura de repetição. Pode não ser a melhor opção se for tratar com
+#numeros muito grandes
+#será usado um laço while e subtrairá cada vez um número maior da entrada.
+#A quantidade de subtração incrementada quando for maior que a base, nao será computada.
+#Essa é uma regra que para considerar a altura da pirâmide, a base tem que estar completa
+#o i-1 no final do código é para ajustar a altura da pirâmide.
+
+#exemplo desenhado. Imagine x = bloco e considere que cada xx de baixo esteja um x em cima no meio
+'''
+x
+xx
+xxx
+xxxx
+'''
+#altura igual a quatro, desde que a base esteja completa, ou seja, base = base de cima + 1.
+#aqui, o número de blocos é = 10, sendo 4 na base e 1 no topo. A altura é 4.
+#Pode-se notar que a altura será igual a base completa. 
+
+
+blocos = int(input("Digite o número de blocos:"))
+i = int(1)
+while blocos >= i:
+    blocos = blocos -i
+    i = i + 1
+    print(blocos)
+print("A altura da pirâmide é", i-1)
