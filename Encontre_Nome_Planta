@@ -1,0 +1,11 @@
+#Digite o nome da planta!
+
+planta = input("Digite o nome da planta: ")
+
+if planta == "Spathiphyllum":
+    print("Yes - Spathiphyllum is the best plant ever!")
+elif planta == "spathiphyllum":
+    print("No, I want a big Spathiphyllum")
+else:
+    print("Spathiphyllum!, Not", planta, "!")
+
