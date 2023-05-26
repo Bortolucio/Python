@@ -1,0 +1,6 @@
+# ENTENDENDO A FUNÇÃO range COM O for
+#for i in range(x, y, z):
+#x é o valor inicial, y o final e z o incremento. 
+
+for i in range(4,20,2):
+    print("O valor de i é: ", i)
