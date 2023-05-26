@@ -1,0 +1,15 @@
+#PROGRAMA PARA EXIBIR SOMA, SUBTRAÇÃO, MULTIPLICAÇÃO E DIVISÃO
+
+a = float(input("digite o valor de a: "))
+b = float(input("digite o valor de b: "))
+soma = a + b
+sub = a - b
+mult = a * b
+div = a / b
+
+print("a soma de a + b é: ", soma)
+print("A subtração de a - b é: ", sub)
+print("A multiplicação de a * b é: ", mult)
+print("A divisão de a + b é :", div)
+              
+print("\nIsso é tudo, pessoal!")
