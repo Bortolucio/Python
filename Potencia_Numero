@@ -1,0 +1,6 @@
+# PROGRAMA PARA CALCULAR A POTÊNCIA COM O for
+
+pot = 1
+for expo in range(16):
+    print("2 à potência de", expo, "é", pot)
+    pot *=2
