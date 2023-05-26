@@ -1,0 +1,11 @@
+# ENCONTRANDO ANO BISSEXTO
+# quando dividir o ano por 4 e o resto for zero, será um ano bissexto
+
+ano = int(input("Digite o ano: "))
+
+if ano < 1582:
+    print("Não dentro do período Gregoriano")
+elif ano % 4 == 0:
+    print("O ano", ano, " é bissexto")
+else:
+    print("O ano", ano, " nao é bissexto") 
