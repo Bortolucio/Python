@@ -1,0 +1,25 @@
+#REMOVENDO ITENS REPETIDOS
+lista = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+lista_sem_repetir = []
+itens_removidos = []
+
+for item in lista:
+   if item in lista_sem_repetir:
+      itens_removidos.append(item)   #Remove o item caso encontrado na lista
+   else:
+      lista_sem_repetir.append(item)
+
+print("A lista com os elementos exclusivos aqui")
+print(itens_removidos)
+
+for item in lista:
+   if item not in lista_sem_repetir:
+      lista_sem_repetir.append(item)   #Adiciona o item, caso não encontrado na lista
+      
+print("Lista sem repetir:", lista_sem_repetir)
+
+#outra forma
+
+lista = [1,2,3,4,1,2,3,5,6]
+sem_repetir = list(set(lista))
+print(sem_repetir)
