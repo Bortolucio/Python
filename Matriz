@@ -1,9 +1,12 @@
 #MATRIZ EXEMPLOS
 squares = [x ** 2 for x in range(10)]
 print(squares)
+#imprime o quadrado do número de zero até 9
 
 twos = [2 ** i for i in range(8)]
 print(twos)
+#imrime potência de 2 elevado de zero até 7 (range(8)
 
 odds = [x for x in squares if x % 2 != 0 ]
 print(odds)
+#imprime os ímpares do vetor square
