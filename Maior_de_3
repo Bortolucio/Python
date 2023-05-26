@@ -1,0 +1,21 @@
+# Leia três números
+num_1 = int(input("Digite o primeiro número: "))
+num_2 = int(input("Digite o segundo número: "))
+num_3 = int(input("Digite o terceiro número: "))
+ 
+# Assumimos temporariamente que o primeiro número é o maior deles.
+# Em breve verificaremos isso.
+largest_num = num_1
+ 
+# Nós verificamos se o segundo número é maior que o maior_número atual
+# e atualize o maior_número, se necessário.
+if num_2 > largest_num:
+    largest_num = num_2
+ 
+# Nós verificamos se o terceiro número é maior que o maior_número atual
+# e atualize o maior_número, se necessário.
+if num_3 > largest_num:
+    largest_num = num_3
+ 
+# Imprimir o resultado
+print("O maior número é:", largest_num)
