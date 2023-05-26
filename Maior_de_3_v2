@@ -1,0 +1,17 @@
+x = int(input("Digite um valor inteiro: "))
+y = int(input("Digite outro valor: "))
+z = int(input("Digite um terceiro valor: "))
+
+#Essa seria uma maneira de fazer
+"""
+num_maior = x
+if y > num_maior:
+    num_maior = y
+if z > num_maior:
+    num_maior = z
+    """
+#Outra maneira é usar a função max()
+num_maior = max(x, y, z)
+    
+
+print("O maior numero é: ", num_maior)
