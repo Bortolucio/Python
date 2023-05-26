@@ -1,0 +1,10 @@
+#Soma dos itens da lista. 
+lista = [10, 1, 8, 3, 5]
+
+total = 0 #variável para coletar a soma dos itens através do loop abaixo
+
+for i in range(len(lista)):
+
+  total += lista[i]
+
+print(total)    #printa a soma dos itens da lista. 
