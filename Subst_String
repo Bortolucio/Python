@@ -1,0 +1,7 @@
+#programa para substituir um caractere em uma string
+
+for digito in "01350780540035":
+    if digito == "0":
+        print("x" end="") #(end="") mantem na mesma linha sem espaço
+        continue
+    print(digito, end="")
