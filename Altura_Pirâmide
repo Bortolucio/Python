@@ -29,6 +29,7 @@ while blocos >= i:
     #estrutura para teste abaixo - remover ('''__''')
     '''print("blocos:", blocos)
     print("i:", i)'''
+    #fim teste
     
 if blocos == 0:
     print("---------------------------")
